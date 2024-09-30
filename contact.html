@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <link rel="stylesheet" href="style.css">
+   
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+   <div class="section">
+    <div> <h1 class="one">Shopping🛍️</h1></div>
+    <div class="home" onclick="home()">Home</div>
+    <div class="shop" onclick="shop()">Shop</div>
+    <div class="blog" onclick="blog()">Blog</div>
+    <div class="about" onclick="about()">About</div>
+    <div class="contact" onclick="contact()">Contact</div>
+    <div class="bag" onclick="bag()"><i class="fa-solid fa-bag-shopping"></i></div>
+    <div class="menu" onclick="worked()"><i class="fa-solid fa-bars"></i></div>
+    
+   </div> 
+   <div class="sidenavbar">
+    <p id="multiply" onclick="closed()">X</p>
+    <p id="samenavber" onclick="home()">Home</p>
+    
+    <p id="samenavber" onclick="shop()">Shop</p>
+    
+    <p id="samenavber" onclick="blog()">Blog</p>
+    
+    <p id="samenavber" onclick="about()">About</p>
+    
+    <p id="samenavber" onclick="contact()">Contact</p>
+    
+    <p id="samenavberbag" onclick="bag()"><i class="fa-solid fa-bag-shopping"></i></p>
+   </div>
+   <br>
+   <br>
+   <br>
+   <div class="core">
+    <div class="leted">
+        <h1 class="k1">#Lets_talk</h1>
+        <p class="k2">LEAVE A MESSAGE.We love to hear from you !</p>
+    </div>
+   </div>
+   <br>
+   <br>
+   <div class="todayss">
+    <div>
+        <p>GET IN TOUCH</p>
+        <h1 class="m1">Visit one of our agency locations or contact us today</h1>
+        <p>Manjattathu vilai parakunnu vanniyoor</p>
+        <p><i class="fa-solid fa-phone"></i>  9489350941</p>
+        <p><i class="fa-regular fa-envelope"></i> pratheeshbright@gmail.com</p>
+        <p><i class="fa-regular fa-clock"></i>  Monaday to Saturday</p>
+    </div>
+   </div>
+   <br>
+   <br>
+   <div class="dedicated">
+    <div class="amazon">
+   <p>LEAVE A MESSAGE</p>
+   <h2>We love to hear from you</h2>
+   <input type="text" placeholder="Your Name" class="slowmotion"><br>
+   <br>
+   <br>
+   <br>
+   <input type="text" placeholder="E-mail" class="slowmotion"><br>
+   <br>
+   <br>
+   <br>
+   <input type="text" placeholder="Subject" class="slowmotion"><br>
+   <br>
+   <br>
+   <br>
+   <input type="text" placeholder="Your Message" class="slowmotions">
+   <h3 id="mice" onclick="submitted()">Submit</h3>
+   </div>
+   <div class="logo">
+    <img src="name1.jpeg" class="wow">
+    <p>Senior Marketing Manager</p>
+    <p>Phone +000 123 00077 88</p>
+    <p>Email:contact@example.com</p>
+    <br>
+    <img src="name2.jpeg" class="wow">
+    <p>Senior Marketing Manager</p>
+    <p>Phone +000 123 00077 88</p>
+    <p>Email:contact@example.com</p>
+    <br>
+    <img src="name3.jpeg" class="wow">
+    <p>Senior Marketing Manager</p>
+    <p>Phone +000 123 00077 88</p>
+    <p>Email:contact@example.com</p>
+   </div>
+   </div>
+   <script>
+    var a=document.querySelector(".sidenavbar")
+    function worked(){
+        a.style.left="0"
+    }
+    function closed(){
+        a.style.left="-80%"
+    }
+   var c=document.getElementById("a8")
+    function signed(){
+       var doc=c.value
+        if(doc==String(doc)){
+            alert("Submitted")
+        }
+        else{
+            alert("Invalid")
+        }
+    }
+    function home(){
+        window.location.assign("index.html")
+    }
+    function shop(){
+        window.location.assign("shop.html")
+    }
+    function blog(){
+        window.location.assign("blog.html")
+    }
+    function about(){
+        window.location.assign("about.html")
+    }
+    function contact(){
+        window.location.assign("contact.html")
+    }
+    function submitted(){
+        alert("Submitted successfully")
+    }
+    function bag(){
+        window.location.assign("bag.html")
+    }
+    </script>
+    </body>
+    </html>

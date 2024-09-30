@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <link rel="stylesheet" href="style.css">
+   
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+   <div class="section">
+    <div> <h1 class="one">Shopping🛍️</h1></div>
+    <div class="home" onclick="home()">Home</div>
+    <div class="shop" onclick="shop()">Shop</div>
+    <div class="blog" onclick="blog()">Blog</div>
+    <div class="about" onclick="about()">About</div>
+    <div class="contact" onclick="contact()">Contact</div>
+    <div class="bag" onclick="bag()"><i class="fa-solid fa-bag-shopping"></i></div>
+    <div class="menu" onclick="worked()"><i class="fa-solid fa-bars"></i></div>
+    
+   </div> 
+   <div class="sidenavbar">
+    <p id="multiply" onclick="closed()">X</p>
+    <p id="samenavber" onclick="home()">Home</p>
+    
+    <p id="samenavber" onclick="shop()">Shop</p>
+    
+    <p id="samenavber" onclick="blog()">Blog</p>
+    
+    <p id="samenavber" onclick="about()">About</p>
+    
+    <p id="samenavber" onclick="contact()">Contact</p>
+    
+    <p id="samenavberbag" onclick="bag()"><i class="fa-solid fa-bag-shopping"></i></p>
+   </div>
+   <br>
+   <br>
+   <br>
+   <div class="know">
+    <div class="knowed">
+        <h1 id="consts">#Know Us</h1>
+        <p id="constss">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, in.</p>
+    </div>
+   </div>
+   <br>
+   <br>
+   <div class="tube">
+    <div>
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/f8jxdhoM_Ks?si=dHxWtEi71NetUb46" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   </div>
+   
+   <div>
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/ctmuoiRUQSQ?si=kvS0KbytJPN9fOqe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+ </div>  
+</div>
+<br>
+<br>
+<div class="innerphone">
+    <div><img src="num1.webp"></div>
+    <div><img src="num2.webp"></div>
+</div>
+<br>
+<br>
+<a href="https://www.flipkart.com/search?q=mobile%20collection&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"><h2 class="hr">Click the button</h2></a>
+   <script>
+    var a=document.querySelector(".sidenavbar")
+    function worked(){
+        a.style.left="0"
+    }
+    function closed(){
+        a.style.left="-80%"
+    }
+   var c=document.getElementById("a8")
+    function signed(){
+       var doc=c.value
+        if(doc==String(doc)){
+            alert("Submitted")
+        }
+        else{
+            alert("Invalid")
+        }
+    }
+    function home(){
+        window.location.assign("index.html")
+    }
+    function shop(){
+        window.location.assign("shop.html")
+    }
+    function blog(){
+        window.location.assign("blog.html")
+    }
+    function about(){
+        window.location.assign("about.html")
+    }
+    function contact(){
+        window.location.assign("contact.html")
+    }
+    function bag(){
+        window.location.assign("bag.html")
+    }
+    </script>
+    </body>
+    </html>

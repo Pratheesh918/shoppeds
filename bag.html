@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <link rel="stylesheet" href="style.css">
+   
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+   <div class="section">
+    <div> <h1 class="one">Shopping🛍️</h1></div>
+    <div class="home" onclick="home()">Home</div>
+    <div class="shop" onclick="shop()">Shop</div>
+    <div class="blog" onclick="blog()">Blog</div>
+    <div class="about" onclick="about()">About</div>
+    <div class="contact" onclick="contact()">Contact</div>
+    <div class="bag" onclick="bag()"><i class="fa-solid fa-bag-shopping"></i></div>
+    <div class="menu" onclick="worked()"><i class="fa-solid fa-bars" ></i></div>
+    
+   </div> 
+   <div class="sidenavbar">
+    <p id="multiply" onclick="closed()">X</p>
+    <p id="samenavber" onclick="home()">Home</p>
+    
+    <p id="samenavber" onclick="shop()">Shop</p>
+    
+    <p id="samenavber" onclick="blog()">Blog</p>
+    
+    <p id="samenavber" onclick="about()">About</p>
+    
+    <p id="samenavber" onclick="contact()">Contact</p>
+    
+    <p id="samenavberbag" onclick="bag()"><i class="fa-solid fa-bag-shopping"></i></p>
+   </div>
+   <br>
+   <br>
+   <br>
+   <div class="core">
+    <div class="leted">
+        <h1 class="k1">#Cart</h1>
+        <p class="k2"> Add your coupon code & SAVE upto 70% !</p>
+    </div>
+   </div>
+   <br>
+   <br>
+   <div class="addition">
+    <div>
+    <img src="shop1.webp" class="bluecolor" id="circle"><br>
+    <img src="shop2.webp" class="bluecolors">
+    <img src="dress1.webp" class="bluecolors">
+    <img src="dress2.webp" class="bluecolors">
+    <img src="dress3.webp" class="bluecolors">
+    </div>
+    <div class="stopped">
+        <p>Home/Shirt</p>
+        <h3>Men's Fashion Shirt</h3>
+        <h1>$139.00</h1>
+        <select><option>Select Size</option>
+            <option>XL</option>
+            <option>Double XL</option>
+            <option>M</option>
+            <option>ML</option>
+        </select>
+        <h3 class="dived" onclick="level()">Add To Cart</h3>
+        <h3>Product Details</h3>
+        <p class="gildan">Shopping can be a fun experience, whether you're browsing for clothes, electronics, or groceries. Online platforms and retail stores offer a wide variety of products to meet diverse customer needs.</p>
+    </div>
+</div>
+<br>
+<br>
+<div class="additions">
+    <div>
+    <img src="formal1.webp" class="bluecolorss" id="circles"><br>
+    <img src="formal2.webp" class="bluecolorsss">
+    <img src="formal3.webp" class="bluecolorsss">
+    <img src="formal4.webp" class="bluecolorsss">
+    <img src="formal5.webp" class="bluecolorsss">
+    </div>
+    <div class="stoppeds">
+        <p>Home/Shirt</p>
+        <h3>Men's Formal Shirt</h3>
+        <h1>$139.00</h1>
+        <select><option>Select Size</option>
+            <option>XL</option>
+            <option>Double XL</option>
+            <option>M</option>
+            <option>ML</option>
+        </select>
+        <h3 class="diveds" onclick="level()">Add To Cart</h3>
+        <h3>Product Details</h3>
+        <p class="gildans">Shopping can be a fun experience, whether you're browsing for clothes, electronics, or groceries. Online platforms and retail stores offer a wide variety of products to meet diverse customer needs.</p>
+    </div>
+</div>
+<br>
+<br>
+<div class="additio">
+    <div>
+    <img src="shop3.webp" class="bluecolo" id="circl"><br>
+    <img src="shop4.webp" class="bluecol">
+    <img src="shop5.webp" class="bluecol">
+    <img src="shop6.jpg" class="bluecol">
+    <img src="shop7.jpg" class="bluecol">
+    </div>
+    <div class="stoppe">
+        <p>Home/Shirt</p>
+        <h3>Men's Fashion Shirt</h3>
+        <h1>$139.00</h1>
+        <select><option>Select Size</option>
+            <option>XL</option>
+            <option>Double XL</option>
+            <option>M</option>
+            <option>ML</option>
+        </select>
+        <h3 class="dive" onclick="level()">Add To Cart</h3>
+        <h3>Product Details</h3>
+        <p class="gilda">Shopping can be a fun experience, whether you're browsing for clothes, electronics, or groceries. Online platforms and retail stores offer a wide variety of products to meet diverse customer needs.</p>
+    </div>
+</div>
+<br>
+<br>
+<h2 class="p5">Apply Coupon</h2>
+<table>
+<tr><td><input placeholder="Enter Your Coupon" class="p3"></td><td class="p4">Apply</td></tr>
+</table>
+<br>
+<br>
+<div class="surround">
+    <table border="1">
+        <tr><td>Cart Subtotal:</td><td id="edge">$335</td></tr>
+        <tr>
+        <tr>
+        <tr>
+        <tr><td>shipping:</td><td id="edge">Free</td></tr>
+        <tr>
+        <tr>
+        <tr>
+        <tr><td>Total:</td><td id="edge">$335</td></tr>
+    </table>
+    <h3 id="edges" onclick="ordernow()">Order Now</h3>
+</div>
+
+   <script>
+    var a=document.querySelector(".sidenavbar")
+    function worked(){
+        a.style.left="0"
+    }
+    function closed(){
+        a.style.left="-80%"
+    }
+   var c=document.getElementById("a8")
+    function signed(){
+       var doc=c.value
+        if(doc==String(doc)){
+            alert("Submitted")
+        }
+        else{
+            alert("Invalid")
+        }
+    }
+    function home(){
+        window.location.assign("index.html")
+    }
+    function shop(){
+        window.location.assign("shop.html")
+    }
+    function blog(){
+        window.location.assign("blog.html")
+    }
+    function about(){
+        window.location.assign("about.html")
+    }
+    function contact(){
+        window.location.assign("contact.html")
+    }
+    function submitted(){
+        alert("Submitted successfully")
+    }
+    function bag(){
+        window.location.assign("bag.html")
+    }
+    var Bigimage=document.getElementById("circle")
+    var smallimage=document.getElementsByClassName("bluecolors")
+    smallimage[0].onclick=function(){
+            Bigimage.src=smallimage[0].src
+    }
+    smallimage[1].onclick=function(){
+            Bigimage.src=smallimage[1].src
+    }
+    smallimage[2].onclick=function(){
+            Bigimage.src=smallimage[2].src
+    }
+    smallimage[3].onclick=function(){
+            Bigimage.src=smallimage[3].src
+    }
+    function level(){
+        alert("Ordered Successfully")
+    }
+    var bigimage=document.getElementById("circles")
+    var Smallimage=document.getElementsByClassName("bluecolorsss")
+    Smallimage[0].onclick=function(){
+            bigimage.src=Smallimage[0].src
+    }
+    Smallimage[1].onclick=function(){
+            bigimage.src=Smallimage[1].src
+    }
+    Smallimage[2].onclick=function(){
+            bigimage.src=Smallimage[2].src
+    }
+    Smallimage[3].onclick=function(){
+            bigimage.src=Smallimage[3].src
+    }
+    function level(){
+        alert("Ordered Successfully")
+    }
+    var igimage=document.getElementById("circl")
+    var mallimage=document.getElementsByClassName("bluecol")
+    mallimage[0].onclick=function(){
+            igimage.src=mallimage[0].src
+    }
+    mallimage[1].onclick=function(){
+            igimage.src=mallimage[1].src
+    }
+    mallimage[2].onclick=function(){
+            igimage.src=mallimage[2].src
+    }
+    mallimage[3].onclick=function(){
+            igimage.src=mallimage[3].src
+    }
+    function level(){
+        alert("Ordered Successfully")
+    }
+    function ordernow(){
+        alert("Ordered Sucessfully delivery on 3 days")
+    }
+      
+    
+    </script>
+    </body>
+    </html>
